@@ -41,5 +41,38 @@ public class Main {
             System.out.println(" error" );
         }
 
+        //get grade
+         System.out.println(" Please enter your grade in Math");
+        int gradeM = read.nextInt();
+        System.out.println(" Please enter your grade in Arabic");
+        int gradeA = read.nextInt();
+        System.out.println(" Please enter your grade in Islamic");
+        int gradeI = read.nextInt();
+        System.out.println(" Please enter your grade in History");
+        int gradeH = read.nextInt();
+        System.out.println(" Please enter your grade in English");
+        int gradeE = read.nextInt();
+        int result;
+
+        result = (gradeM + gradeA + gradeI + gradeH + gradeE)/5;
+        System.out.println("your total grade is "+ result);
+
+
+            if (100 >= result && result >=90){
+                System.out.println("Your grade is A " );
+            }
+            else if(90 > result && result >=80) {
+                System.out.println("Your grade is B  "  );
+            }
+            else if(80 > result && result >=70) {
+                System.out.println("Your grade is  C ");
+            }
+            else if(70 > result && result >=60) {
+                System.out.println("Your grade is D ");
+            }else {
+                System.out.println("Your grade is F ");
+            }
+
+
     }
 }
